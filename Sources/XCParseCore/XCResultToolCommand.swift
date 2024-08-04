@@ -71,6 +71,7 @@ open class XCResultToolCommand {
 
             var processArgs = xcresultToolArguments
             processArgs.append(contentsOf: ["export",
+                                            "--legacy",
                                             "--type", self.type.rawValue,
                                             "--path", xcresult.path,
                                             "--id", self.id,
@@ -92,6 +93,7 @@ open class XCResultToolCommand {
 
             var processArgs = xcresultToolArguments
             processArgs.append(contentsOf: ["export",
+                                            "--legacy",
                                             "--type", self.type.rawValue,
                                             "--path", xcresult.path,
                                             "--id", self.id,
@@ -119,6 +121,7 @@ open class XCResultToolCommand {
 
             var processArgs = xcresultToolArguments
             processArgs.append(contentsOf: ["get",
+                                            "--legacy",
                                             "--path", xcresult.path,
                                             "--format", self.format.rawValue])
             if self.id != "" {
